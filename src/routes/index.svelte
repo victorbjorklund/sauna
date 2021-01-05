@@ -1,37 +1,27 @@
-<script>
-	import successkid from 'images/successkid.jpg';
-</script>
-
-<style>
+<style lang="postcss">
 	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
+		@apply text-center my-0 mx-auto;
 	}
 
 	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
+		@apply text-3xl uppercase font-bold m-0 mb-4 text-orange-500 font-sans;
 	}
-
+	
 	figure {
-		margin: 0 0 1em 0;
+		@apply m-0 mb-4;
 	}
-
+	
 	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
+		@apply w-full max-w-5xl m-0 mb-4;
 	}
-
+	
 	p {
-		margin: 1em auto;
+		@apply my-0 mx-auto;
 	}
 
-	@media (min-width: 480px) {
+	@screen md {
 		h1 {
-			font-size: 4em;
+			@apply text-5xl;
 		}
 	}
 </style>
@@ -43,7 +33,7 @@
 <h1>Great success!</h1>
 
 <figure>
-	<img alt="Success Kid" src="{successkid}">
+	<img alt='Success Kid' src='successkid.jpg'>
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
