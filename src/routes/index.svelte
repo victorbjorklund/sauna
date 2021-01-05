@@ -1,7 +1,7 @@
 
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Sauna.com.cy - The Experience</title>
 </svelte:head>
 
 <section class="text-gray-400 bg-gray-900 body-font">
